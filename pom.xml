@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>learn.linux</groupId>
-    <artifactId>build</artifactId>
+    <artifactId>auto-build</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <!--继承spring-boot-starter-parent父工程-->
@@ -32,6 +32,10 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
